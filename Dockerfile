@@ -25,7 +25,7 @@ RUN chmod 755 /usr/local/bin/echidna
 ###
 ### ETH Security Toolbox
 ###
-FROM ubuntu:jammy AS toolbox
+FROM ubuntu:noble AS toolbox
 
 # Add common tools
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
